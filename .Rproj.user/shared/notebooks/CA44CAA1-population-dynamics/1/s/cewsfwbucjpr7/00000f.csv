@@ -1,0 +1,7 @@
+"0","# Function to compute CBR"
+"0","compute_cbr <- function(populationData) {"
+"0","  populationData %>%"
+"0","    group_by(period) %>%"
+"0","    summarise(cbr = sum(births) / sum(py)) %>%"
+"0","    pull()"
+"0","}"

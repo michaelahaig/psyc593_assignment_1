@@ -1,0 +1,7 @@
+"0","# Function to compute CDR"
+"0","compute_cdr <- function(population_data) {"
+"0","  population_data %>%"
+"0","    group_by(period) %>%"
+"0","    summarise(cbr = sum(deaths) / sum(py)) %>%"
+"0","    pull()"
+"0","}"

@@ -1,0 +1,7 @@
+"0","# Function to compute population proportion by period"
+"0","compute_pop_prop <- function(pop_data) {"
+"0","  pop_data %>%"
+"0","    group_by(period) %>%"
+"0","    mutate(popP = py / sum(py)) %>%"
+"0","    ungroup()"
+"0","}"

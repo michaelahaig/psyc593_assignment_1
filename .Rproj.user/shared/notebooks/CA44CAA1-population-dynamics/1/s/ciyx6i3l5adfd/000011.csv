@@ -1,0 +1,4 @@
+"0","# Combine py of men and women to get total py for each country"
+"0","world_data$py <- world_data$py.men + world_data$py.women"
+"0","kenya_data$py <- kenya_data$py.men + kenya_data$py.women"
+"0","sweden_data$py <- sweden_data$py.men + sweden_data$py.women"

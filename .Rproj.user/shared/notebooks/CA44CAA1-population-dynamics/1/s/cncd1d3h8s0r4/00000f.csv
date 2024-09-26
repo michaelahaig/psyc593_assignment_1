@@ -1,0 +1,4 @@
+"0","# Compute population proportion for each data set"
+"0","world_data <- compute_pop_prop(world_data)"
+"0","kenya_data <- compute_pop_prop(kenya_data)"
+"0","sweden_data <- compute_pop_prop(sweden_data)"

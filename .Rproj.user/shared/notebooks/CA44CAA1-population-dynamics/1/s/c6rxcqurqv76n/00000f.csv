@@ -1,0 +1,5 @@
+"0","# Function to compute ASDR"
+"0","compute_asdr <- function(pop_data) {"
+"0","  pop_data %>%"
+"0","    mutate(asdr = deaths / py)"
+"0","}"
