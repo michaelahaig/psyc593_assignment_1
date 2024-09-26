@@ -1,6 +1,0 @@
-"0","# Compute Kenyas CDR Kenya had Sweden's population distribution"
-"0","mutate(kenya_data,"
-"0","  temp_cdr = asdr * sweden_data$popP"
-"0",") %>%"
-"0","  group_by(period) %>%"
-"0","  summarise(cdrresweden = sum(temp_cdr))"

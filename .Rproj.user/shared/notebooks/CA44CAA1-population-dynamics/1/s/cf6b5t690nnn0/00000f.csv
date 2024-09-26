@@ -1,5 +1,6 @@
 "0","# Function to compute ASFR"
 "0","compute_asfr <- function(pop_data) {"
 "0","  pop_data %>%"
+"0","    filter(age >= 15 & age <= 49) %>%"
 "0","    mutate(asfr = births / py.women)"
 "0","}"

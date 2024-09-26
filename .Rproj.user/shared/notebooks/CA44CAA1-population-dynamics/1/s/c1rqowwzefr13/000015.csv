@@ -1,4 +1,0 @@
-"0","# Compute ASDR for each data set"
-"0","world_data <- compute_asdr(world_data)"
-"0","kenya_data <- compute_asdr(kenya_data)"
-"0","sweden_data <- compute_asdr(sweden_data)"
