@@ -59,9 +59,9 @@ Population Division (2013). *World Population Prospects: The 2012 Revision, DVD 
 library(tidyverse)
 
 # Read data --------------------------------------------------------------------
-world_data <- readr::read_csv("..\\data\\raw_data\\World.csv")
-kenya_data <- readr::read_csv("..\\data\\raw_data\\Kenya.csv")
-sweden_data <- readr::read_csv("..\\data\\raw_data\\Sweden.csv")
+world_data <- readr::read_csv("../data/raw_data/World.csv")
+kenya_data <- readr::read_csv("../data/raw_data/Kenya.csv")
+sweden_data <- readr::read_csv("../data/raw_data/Sweden.csv")
 ```
 
 <!-- The `read_csv` function from the package `readr` -->
@@ -109,11 +109,11 @@ spreadsheet-like view.
 --------------------------------------------------------------------------------
 Location  1950-1955 CBR   2005-2010 CBR
 --------- -------------   -------------
-"World"     0.0373          0.0202
+'World'     0.0373          0.0202
 
-"Kenya"     0.0521          0.0385
+'Kenya'     0.0521          0.0385
 
-"Sweden"    0.0154          0.0119
+'Sweden'    0.0154          0.0119
 --------------------------------------------------------------------------------
 
 From these results, we see that the CBR for both countries and the world is 
@@ -139,8 +139,8 @@ Second, create the formula for Crude Birth Rate (CBR).
 
 ```{r, compute-CBR}
 # Function to compute CBR
-compute_cbr <- function(populationData) {
-  populationData %>%
+compute_cbr <- function(pop_data) {
+  pop_data %>%
     group_by(period) %>%
     summarise(cbr = sum(births) / sum(py)) %>%
     pull()
