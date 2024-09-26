@@ -117,7 +117,7 @@ Location  1950-1955 CBR   2005-2010 CBR
 --------------------------------------------------------------------------------
 
 From these results, we see that the CBR for both countries and the world is 
-lower in 2005 to 2010, compared with 1950 to 1955. We alsos see that at both
+lower in 2005 to 2010, compared with 1950 to 1955. We also see that at both
 timepoints, Kenya has a higher CBR than the world, while Sweden has a lower.
 
 ### Steps to achieve
@@ -215,6 +215,7 @@ First, establish the formula to calculate the Age Specific Fertility Rate
 # Function to compute ASFR
 compute_asfr <- function(pop_data) {
   pop_data %>%
+    filter(age >= 15 & age <= 49) %>%
     mutate(asfr = births / py.women)
 }
 ```
