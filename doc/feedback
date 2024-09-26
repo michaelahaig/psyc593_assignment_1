@@ -1,0 +1,7 @@
+Variable populationData does not follow tidyverse style.
+
+Add r epxression bits to the first table.
+
+Avoid \\ in the filepath, try /
+
+Select only women in the reproductive age range (15-50) for calculating ASFR.
